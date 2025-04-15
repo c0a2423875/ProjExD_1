@@ -12,6 +12,7 @@ def main():
     bg_img = pg.image.load("fig/pg_bg.jpg")
     kk_img = pg.image.load("fig/3.png") #練習１
     kk_img = pg.transform.flip(kk_img, True, False)  #練習２
+
     tmr = 0
     while True:
         for event in pg.event.get():
@@ -21,7 +22,7 @@ def main():
         screen.blit(kk_img, [300, 200])
         pg.display.update()
         tmr += 1        
-        clock.tick(10)
+        clock.tick(200)
 
 
 if __name__ == "__main__":
